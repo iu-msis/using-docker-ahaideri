@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.css">
-    <title>Home</title>
+    <title>Index</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,11 +19,11 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="bookstore.html">Books</a>
+        <a class="nav-link" href="Index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="bookstore.html">Books <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Details.html">Details</a>
@@ -45,39 +45,106 @@
     </ul>
   </div>
 </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <p class="paraHeading">
-            <marquee>One Piece!</marquee>
-          </p>
-        <p class="paraHeading">
-          Hello Everyone! Here's a little story about my favorite anime series - One Piece
-        </p>
-      </div>
-      </div>
-      <div class="row">
-        <div class="col colSpecific">
-          <p class="paras">
-            Setting - The world is full of islands, marines and pirates. Every pirate group is in quest of a treasure named one piece, that was made famous by a notorious pirate by the name of Gol D. Rodger.
-          </p>
-        </div>
-        <div class="col colSpecific">
-          <p class="paras">
-            Heroes - Amidst this endless rat race to find One Piece and become the king of pirates, there is a small town teenager called Luffy who aspires to be a pirate and one day become the pirate king by finding One Piece. The entire story evolves around this character and his crew members.
-          </p>
-        </div>
-        <div class="col colSpecific">
-          <p class="paras">
-            Villains - As Luffy rises up the ranks, he meets and battles other fierce pirates like Arlong, Crocodile, Ceasar Clown, Blackbeard, Big Mom etc.
-          </p>
-        </div>
-      </div>
-    </div>
-    <footer class="source">
-    Source : tokkoro.com
-    </footer>
-
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Year</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Pages</th>
+      <th scope="col">MSRP</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">Angels & Demons</th>
+      <td>Brown</td>
+      <td>2009</td>
+      <td>Penguin</td>
+      <td>563</td>
+      <td>$12.99</td>
+    </tr>
+    <tr>
+      <th scope="row">Famous Five</th>
+      <td>Blyton</td>
+      <td>1999</td>
+      <td>Nirali</td>
+      <td>240</td>
+      <td>$8.99</td>
+    </tr>
+    <tr>
+      <th scope="row">Secret Seven</th>
+      <td>Schwimmer</td>
+      <td>2002</td>
+      <td>Techmax</td>
+      <td>332</td>
+      <td>$6.99</td>
+    </tr>
+    <tr>
+      <th scope="row">Fifty Shades</th>
+      <td>James</td>
+      <td>2016</td>
+      <td>Vintage</td>
+      <td>460</td>
+      <td>$16.99</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <br><br><br><br>
+  <div class="row">
+    <form>
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th>
+            <u>
+              Add New Book
+            </u>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name :</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Author :</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Year :</td>
+          <td><input type="number"></td>
+        </tr>
+        <tr>
+          <td>Publisher :</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Pages :</td>
+          <td><input type="number"></td>
+        </tr>
+        <tr>
+          <td>MSRP :</td>
+          <td><input type="number"></td>
+        </tr>
+        <tr>
+          <th><a class="button" href="">Add</a></th>
+          <th><a class="button" href="">Cancel</a></th>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  </div>
+</div>
+<footer class="source">
+Source : tokkoro.com
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

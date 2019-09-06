@@ -1,0 +1,48 @@
+.headshot{
+
+}
+.button{
+  color: white;
+  background-color: black;
+  padding: 15px;
+}
+.button:hover{
+  color: lightblue;
+}
+nav{
+  color: black;
+  font-weight: bolder;
+  background-color: blue;
+}
+body{
+  background: url("../img/onepiece2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table{
+  background-color: white;
+}
+.details{
+    background-color: lightblue;
+}
+.paraHeading{
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
+.paras{
+  font-weight: 200;
+  color: white;
+  font-size: 18px;
+}
+#headshot:hover{
+  height: 130%;
+}
+.colSpecific{
+  border: 1px solid black;
+}
+.source{
+  color: white;
+}

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.css">
-    <title>Home</title>
+    <title>Details</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,14 +19,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="Index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="bookstore.html">Books</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Details.html">Details</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="Details.html">Details <span class="sr-only">(current)</span></a>
       </li>
       <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,38 +45,24 @@
     </ul>
   </div>
 </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <p class="paraHeading">
-            <marquee>One Piece!</marquee>
-          </p>
-        <p class="paraHeading">
-          Hello Everyone! Here's a little story about my favorite anime series - One Piece
-        </p>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <img src="img/zoro.jpg" alt="" id="headshot"><br>
+      <div class="details">
+        <i><b>Source: Google</b></i><br>
+        Name : Roronoa Zoro<br>
+        Country : East Blue<br>
+        D.O.B : 09/2/1998<br>
+        Age : 21<br>
+        Email : <a href="mailto:ahaideri@iu.edu?Subject=Hello%20again" target="_top">katana_killer@gmail.com</a><br>
       </div>
       </div>
-      <div class="row">
-        <div class="col colSpecific">
-          <p class="paras">
-            Setting - The world is full of islands, marines and pirates. Every pirate group is in quest of a treasure named one piece, that was made famous by a notorious pirate by the name of Gol D. Rodger.
-          </p>
-        </div>
-        <div class="col colSpecific">
-          <p class="paras">
-            Heroes - Amidst this endless rat race to find One Piece and become the king of pirates, there is a small town teenager called Luffy who aspires to be a pirate and one day become the pirate king by finding One Piece. The entire story evolves around this character and his crew members.
-          </p>
-        </div>
-        <div class="col colSpecific">
-          <p class="paras">
-            Villains - As Luffy rises up the ranks, he meets and battles other fierce pirates like Arlong, Crocodile, Ceasar Clown, Blackbeard, Big Mom etc.
-          </p>
-        </div>
-      </div>
-    </div>
-    <footer class="source">
-    Source : tokkoro.com
-    </footer>
+  </div>
+</div>
+<footer class="source">
+Source : tokkoro.com
+</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
