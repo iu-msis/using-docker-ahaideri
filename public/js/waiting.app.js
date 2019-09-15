@@ -5,17 +5,20 @@ waitingApp = new Vue({
       name:{
         first:'',
         last:''
+      },
+      location:{
+        timezone:{
+          description:''
+        }
+      },
+      email:'',
+      picture:{
+        large:''
+      },
+      dob:{
+        date:''
       }
     },
-    location:{
-      timezone:{
-        description:''
-      }
-    },
-    email:'',
-    picture:{
-      large:''
-    }
   },
   methods:{
     fetchPerson(){
