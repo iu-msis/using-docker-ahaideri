@@ -48,14 +48,14 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="randomUsersId">
-      <img v-bind:src="person.picture.large" alt="" id="headshot"><br>
+      <a v-bind:href="person.picture.large"><img v-bind:src="person.picture.medium" alt="" id="headshot"></a><br>
       <div class="details">
         <i><b>Source: Google</b></i><br>
         Name : {{person.name.first}} {{person.name.last}}<br>
         Country : {{person.location.timezone.description}}<br>
         D.O.B : {{person.dob.date}}<br>
         Age : {{person.dob.age}}<br>
-        Email : <a href="mailto:ahaideri@iu.edu?Subject=Hello%20again" target="_top">{{person.email}}</a><br>
+        Email : <a :href="'mailto:'+person.email" target="_top">{{person.email}}</a><br>
       </div>
       </div>
   </div>
