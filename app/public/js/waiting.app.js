@@ -13,7 +13,8 @@ waitingApp = new Vue({
       },
       email:'',
       picture:{
-        large:''
+        large:'',
+        medium:''
       },
       dob:{
         date:''
@@ -24,7 +25,12 @@ waitingApp = new Vue({
     fetchPerson(){
       fetch('https://randomuser.me/api/')
       .then(response => response.json())
-      .then(json => {waitingApp.person=json.results[0]});
+      .then(json => {
+        var pdate = json.results[0].dob.date;
+        pdate= pdate.substring(0,10);
+        json.results[0].dob.date=pdate;
+        waitingApp.person=json.results[0];
+      });
     }
   },
   created(){
