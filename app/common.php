@@ -1,6 +1,6 @@
 <?php
 
-include 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
 // This block decodes POSTed JSON and adds it to $_POST for easier use
 if (($_SERVER['REQUEST_METHOD'] ?? '') == 'POST'
