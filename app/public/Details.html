@@ -8,6 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/site.css">
+  <link rel="icon" href="data:;base64,=">
   <title>Details</title>
 </head>
 <body>
@@ -48,7 +49,11 @@
 <div class="container-fluid">
   <div class="row" id="randomUsersId">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" >
-        <a v-bind:href="person.picture.large"><img v-bind:src="person.picture.medium" alt="" id="headshot"></a><br>
+        <div class="users" v-for="user in users">
+            <span class="lastName">{{ user.firstName }}</span>,
+            <span clas="firstName">{{ user.lastName }}</span>
+        </div>
+        <!-- <a v-bind:href="person.picture.large"><img v-bind:src="person.picture.medium" alt="" id="headshot"></a><br>
         <div class="details">
           <i><b>Source: Google</b></i><br>
           Name : {{person.name.first}} {{person.name.last}}<br>
@@ -56,16 +61,14 @@
           D.O.B : {{person.dob.date}}<br>
           Age : {{person.dob.age}}<br>
           Email : <a :href="'mailto:'+person.email" target="_top">{{person.email}}</a><br>
-        </div>
+        </div> -->
         <form v-on:submit.prevent="fetchPerson">
+
           <input type="submit" value="Fetch" class="button">
         </form>
       </div>
   </div>
 </div>
-<footer class="source">
-  Source : tokkoro.com
-</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
