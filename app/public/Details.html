@@ -65,7 +65,7 @@
           Age : {{person.dob.age}}<br>
           Email : <a :href="'mailto:'+person.email" target="_top">{{person.email}}</a><br>
         </div> -->
-        <!-- <form v-on:submit.prevent="createUser()">
+        <form v-on:submit.prevent="createUser()">
           <div class="users">
             <label for="userFirstName">First Name</label>
             <input type="text" v-model="newUser.firstName" class="form-control" id="userFirstName" placeholder="Omkar">
@@ -73,7 +73,7 @@
             <input type="text" v-model="newUser.lastName" class="form-control" id="userLastName" placeholder="Tamhankar">
           </div><br/>
           <input type="submit" value="Create User" class="button">
-        </form> -->
+        </form>
       </div>
   </div>
 </div>
